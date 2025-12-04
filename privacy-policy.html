@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Amosix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: #e0e0e0;
+            line-height: 1.8;
+            padding: 100px 40px 60px;
+        }
+
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(15, 12, 41, 0.95);
+            border-bottom: 2px solid rgba(0, 212, 255, 0.3);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-family: 'Righteous', cursive;
+            font-size: 1.8rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #8a2be2, #00d4ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+
+        .back-link {
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #8a2be2, #00d4ff);
+            border: 2px solid #00d4ff;
+            border-radius: 30px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.7);
+        }
+
+        h1 {
+            font-family: 'Righteous', cursive;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        
+        .divider {
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 212, 255, 0.3);
+    margin: 30px 0;
+}
+
+        .highlight {
+            color: #00d4ff;
+        }
+
+        
+
+        .date {
+            text-align: center;
+            font-size: 0.95rem;
+            color: #00d4ff;
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-family: 'Righteous', cursive;
+            font-size: 1.8rem;
+            color: #00d4ff;
+            margin: 50px 0 20px;
+        }
+
+        h3 {
+            font-family: 'Righteous', cursive;
+            font-size: 1.4rem;
+            color: #ff6b6b;
+            margin: 30px 0 15px;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            max-width: 900px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            max-width: 900px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            padding: 10px 0 10px 30px;
+            position: relative;
+        }
+
+        li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #00d4ff;
+            font-weight: 900;
+            font-size: 1.2rem;
+        }
+
+        .warning-box {
+            background: rgba(255, 107, 107, 0.1);
+            border-left: 4px solid #ff6b6b;
+            padding: 25px;
+            margin: 30px 0;
+            max-width: 900px;
+        }
+
+        .contact-section {
+            text-align: center;
+            margin: 60px 0 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.2), rgba(0, 212, 255, 0.2));
+            border: 2px solid rgba(0, 212, 255, 0.4);
+            border-radius: 15px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .email-link {
+            color: #00d4ff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .email-link:hover {
+            text-shadow: 0 0 20px rgba(0, 212, 255, 0.8);
+        }
+
+        a {
+            color: #00d4ff;
+            text-decoration: underline;
+        }
+
+        strong {
+            color: #fff;
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-top: 40px;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 90px 25px 50px;
+            }
+
+            .nav-bar {
+                padding: 15px 25px;
+            }
+
+            .logo {
+                font-size: 1.4rem;
+            }
+
+            .back-link {
+                padding: 10px 20px;
+                font-size: 0.85rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                margin: 40px 0 15px;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            p, li {
+                font-size: 0.95rem;
+            }
+
+            .warning-box {
+                padding: 20px;
+            }
+
+            .contact-section {
+                padding: 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 85px 15px 40px;
+            }
+
+            .nav-bar {
+                padding: 12px 15px;
+            }
+
+            .logo {
+                font-size: 1.2rem;
+            }
+
+            .back-link {
+                padding: 8px 15px;
+                font-size: 0.8rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .contact-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <a href="index.html" class="logo">✨ Amosix</a>
+        <a href="javascript:history.back()" class="back-link">← Back to Home</a>
+    </nav>
+
+    <h1>Privacy <span class="highlight">Policy</span></h1>
+   <div class="divider"></div>
+
+    <h2>📋 Introduction</h2>
+    <p>Welcome to <strong>Amosix</strong> (the "Website" or "Service"). We are committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our emoji mosaic generator service.</p>
+    <p><strong>Amosix</strong> is designed with privacy at its core. Our tool operates entirely within your browser, meaning <strong>we do not collect, store, or transmit your images to any server</strong>.</p>
+
+    <h2>🔒 No Personal Data Collection</h2>
+    <p>Unlike most web applications, Amosix operates completely on your device:</p>
+    <ul>
+        <li><strong>No Image Uploads:</strong> Your images never leave your device. All processing happens locally in your browser.</li>
+        <li><strong>No User Accounts:</strong> We do not require registration, login, or any personal information.</li>
+        <li><strong>No Storage:</strong> We do not store your images, creations, or any files on our servers.</li>
+        <li><strong>No Tracking:</strong> We do not track your browsing behavior or collect usage data.</li>
+    </ul>
+
+    
+
+    <h2>📢 Third-Party Advertising (Google AdSense)</h2>
+    <p>Amosix uses <strong>Google AdSense</strong> to display advertisements. Google AdSense may collect and use information as follows:</p>
+    <ul>
+        <li><strong>Cookies:</strong> Google uses cookies to serve ads based on your prior visits to our website or other websites.</li>
+        <li><strong>Personalized Ads:</strong> Google's use of advertising cookies enables it and its partners to serve ads based on your visit to Amosix and/or other sites on the Internet.</li>
+        <li><strong>Opt-Out:</strong> You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank">Google Ads Settings</a> or <a href="http://www.aboutads.info/choices/" target="_blank">aboutads.info</a>.</li>
+    </ul>
+    <p>We do not control the cookies placed by Google AdSense. Please review Google's Privacy Policy at <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a> for more information.</p>
+
+    <h2>💻 Local Browser Processing</h2>
+    <p>All image processing happens entirely within your browser using client-side technologies:</p>
+    <ul>
+        <li>Images are processed using JavaScript and HTML5 Canvas</li>
+        <li>No data is sent to external servers during processing</li>
+        <li>Your browser's local storage may temporarily cache files for performance</li>
+        <li>Clearing your browser cache will remove all locally stored data</li>
+    </ul>
+
+    <h2>🍪 Cookies Policy</h2>
+    <p>Amosix uses minimal cookies for essential functionality:</p>
+    <ul>
+        <li><strong>Essential Cookies:</strong> Required for basic site functionality (e.g., remembering your preferences)</li>
+        <li><strong>Google AdSense Cookies:</strong> Used by Google to serve personalized ads (see Third-Party Advertising section)</li>
+    </ul>
+    <p>You can control cookies through your browser settings. Note that disabling cookies may affect site functionality and ad personalization.</p>
+
+    <h2>🛡️ Data Security</h2>
+    <p>Since your data never leaves your device:</p>
+    <ul>
+        <li>Your images are as secure as your device</li>
+        <li>We use HTTPS encryption for website communication</li>
+        <li>No server-side vulnerabilities can expose your data</li>
+        <li>You maintain complete control over your content</li>
+    </ul>
+
+    <h2>🔗 Third-Party Links</h2>
+    <p>Our website may contain links to third-party websites (e.g., social media, blog). We are not responsible for the privacy practices of these external sites. We encourage you to read their privacy policies.</p>
+
+    <h2>👶 Children's Privacy</h2>
+    <p>Amosix does not knowingly collect information from children under 13. Our service can be used by all ages under parental supervision, as no personal data is collected. Parents should monitor their children's use of the internet.</p>
+
+    <h2>⚖️ Your Rights</h2>
+    <p>Since we do not collect personal data, there is no data to:</p>
+    <ul>
+        <li>Request access to</li>
+        <li>Request deletion of</li>
+        <li>Request correction of</li>
+        <li>Request transfer of</li>
+    </ul>
+    <p>All your images and creations remain solely on your device.</p>
+
+    <h2>📝 Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last Updated" date. We encourage you to review this policy periodically.</p>
+
+    <h2>✅ Your Consent</h2>
+    <p>By using Amosix, you consent to this Privacy Policy and agree to its terms, including:</p>
+    <ul>
+        <li>Not uploading prohibited or inappropriate content</li>
+        <li>Accepting Google AdSense's use of cookies for advertising</li>
+        <li>Understanding that all processing happens locally on your device</li>
+    </ul>
+
+    <div class="contact-section">
+        <h3 style="color: #fff; margin: 0 0 15px 0;">📧 Questions or Concerns?</h3>
+        <p>If you have any questions about this Privacy Policy or our practices, please <a href="contact.html">contact us</a> at:</p>
+        <a href="mailto:eztolix@gmail.com" class="email-link">eztolix@gmail.com</a>
+    </div>
+
+    <p class="footer-text">© 2024 Amosix. All rights reserved.</p>
+</body>
+</html>

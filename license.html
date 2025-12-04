@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licenses - Amosix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            line-height: 1.6;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid rgba(0, 212, 255, 0.3);
+        }
+
+        h1 {
+            font-family: 'Righteous', cursive;
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        h1 .highlight {
+            color: #00d4ff;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #00d4ff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.3s;
+        }
+
+        .back-link:hover {
+            opacity: 0.7;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-family: 'Righteous', cursive;
+            font-size: 1.5rem;
+            color: #00d4ff;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: #fff;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            opacity: 0.9;
+        }
+
+        a {
+            color: #00d4ff;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        a:hover {
+            opacity: 0.7;
+            text-decoration: underline;
+        }
+
+        code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+            color: #00d4ff;
+        }
+
+        .license-block {
+            background: rgba(0, 0, 0, 0.2);
+            border-left: 3px solid #00d4ff;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+            border-top: 2px solid rgba(0, 212, 255, 0.3);
+            opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 15px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+        }
+        
+        a {
+    overflow-wrap: anywhere;
+}
+        
+        
+        @media (max-width: 768px) {
+    nav {
+        padding: 15px 20px !important;
+    }
+    
+    nav div {
+        font-size: 1.3rem !important;
+    }
+    
+    nav a {
+        padding: 10px 20px !important;
+        font-size: 0.9rem !important;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Simple Navbar -->
+    <nav style="padding: 20px 40px; position: sticky; top: 0; z-index: 1000; display: flex; background: rgba(15, 12, 41, 0.95); justify-content: space-between; align-items: center; border-bottom: 2px solid rgba(0, 212, 255, 0.3);">
+        <div style="font-family: 'Righteous', cursive; font-size: 1.8rem; background: linear-gradient(135deg, #8a2be2, #00d4ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">✨ Amosix</div>
+        <a href="javascript:history.back()" style="padding: 12px 30px; background: linear-gradient(135deg, #8a2be2, #00d4ff); border: 2px solid #00d4ff; border-radius: 30px; color: #fff; font-weight: 700; text-decoration: none; transition: all 0.3s;">← Back</a>
+    </nav>
+    
+    <div class="container">
+        <header>
+            <h1>Licenses <span class="highlight">&</span> Credits</h1>
+            <p class="subtitle">Third-party libraries used in Amosix</p>
+        </header>
+
+        <!-- Main License -->
+        <section>
+            <h2>Amosix License</h2>
+            <p>This emoji mosaic generator tool is provided free of charge for personal and commercial use. Your images are processed entirely in your browser - we never store or transmit your photos to any server.</p>
+        </section>
+
+        <!-- Third-Party Libraries -->
+        <section>
+            <h2>Third-Party Libraries</h2>
+            
+            <h3>1. Cropper.js</h3>
+            <div class="license-block">
+                <p><strong>Version:</strong> 1.5.13</p>
+                <p><strong>License:</strong> MIT License</p>
+                
+                <p><strong>Source:</strong> <a href="https://github.com/fengyuanchen/cropperjs" target="_blank">github.com/fengyuanchen/cropperjs</a></p>
+                <p><strong>Copyright:</strong> © Chen Fengyuan</p>
+            </div>
+
+            <h3>2. glfx.js</h3>
+            <div class="license-block">
+                <p><strong>License:</strong> MIT License</p>
+                
+                <p><strong>Source:</strong> <a href="https://github.com/evanw/glfx.js" target="_blank">github.com/evanw/glfx.js</a></p>
+                <p><strong>Copyright:</strong> © Evan Wallace</p>
+            </div>
+
+            <h3>3. Noto Color Emoji Font</h3>
+            <div class="license-block">
+                <p><strong>Version:</strong> COLRv1</p>
+                <p><strong>License:</strong> SIL Open Font License 1.1</p>
+                
+                <p><strong>Source:</strong> <a href="https://fonts.google.com/noto/specimen/Noto+Color+Emoji" target="_blank">Google Fonts - Noto Color Emoji</a></p>
+                <p><strong>Copyright:</strong> © Google Inc.</p>
+            </div>
+
+            <h3>4. Google Fonts</h3>
+            <div class="license-block">
+                <p><strong>Fonts Used:</strong></p>
+                <ul>
+                    <li>Righteous - SIL Open Font License 1.1</li>
+                    <li>Poppins - SIL Open Font License 1.1</li>
+                </ul>
+                <p><strong>Source:</strong> <a href="https://fonts.google.com" target="_blank">fonts.google.com</a></p>
+            </div>
+        </section>
+
+        <!-- MIT License Text -->
+        <section>
+            <h2>MIT License (Cropper.js & glfx.js)</h2>
+            <div class="license-block">
+                <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+                <br>
+                <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+                <br>
+                <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+            </div>
+        </section>
+
+        <!-- SIL Open Font License -->
+        <section>
+            <h2>SIL Open Font License 1.1 (Fonts)</h2>
+            <div class="license-block">
+                <p>This Font Software is licensed under the SIL Open Font License, Version 1.1. This license allows the fonts to be used, studied, modified and redistributed freely as long as they are not sold by themselves.</p>
+                <br>
+                <p>The fonts may be embedded into documents and the license permits modification and distribution of derivative works.</p>
+                <br>
+                <p><strong>Full License:</strong> <a href="https://scripts.sil.org/OFL" target="_blank">scripts.sil.org/OFL</a></p>
+            </div>
+        </section>
+
+        <!-- CDN Services -->
+        <section>
+            <h2>Content Delivery Networks</h2>
+            <ul>
+                <li><strong>Cloudflare CDN:</strong> Used for serving third-party JavaScript libraries</li>
+                <li><strong>Cloudflare R2:</strong> Used for hosting static assets (fonts, images)</li>
+            </ul>
+        </section>
+
+        <!-- Acknowledgments -->
+        <section>
+            <h2>Acknowledgments</h2>
+            <p>We are grateful to the open source community and the developers who created these amazing tools that make Amosix possible:</p>
+            <ul>
+                <li>Chen Fengyuan for Cropper.js image cropping library</li>
+                <li>Evan Wallace for glfx.js WebGL effects library</li>
+                <li>Google for Noto Color Emoji and web fonts</li>
+                <li>The open source community for continuous improvements</li>
+            </ul>
+        </section>
+
+        <!-- Contact -->
+        <section>
+            <h2>Questions or Concerns?</h2>
+            <p>If you have any questions about these licenses or the use of third-party libraries in Amosix, please <a href="contact.html">contact us.</a></p>
+            <p>Last updated: December 2024</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Amosix. All rights reserved.</p>
+            <p>Built with ❤️ using open source technologies</p>
+        </footer>
+    </div>
+</body>
+</html>

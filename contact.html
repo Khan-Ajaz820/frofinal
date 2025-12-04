@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>Contact – Amosix</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #00ff88;
+      --secondary: #00d4ff;
+      --accent: #ff0080;
+      --darker: #050814;
+    }
+
+    html {
+      height: 100%;
+      height: -webkit-fill-available;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: var(--darker);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      min-height: -webkit-fill-available;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    /* Background */
+    .bg-animation {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      background: radial-gradient(ellipse at top, #0f1729, #050814);
+      pointer-events: none;
+    }
+
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+      opacity: 0.3;
+      animation: float 20s infinite ease-in-out;
+    }
+
+    .orb-1 {
+      width: 300px;
+      height: 300px;
+      background: var(--primary);
+      top: -80px;
+      left: -80px;
+    }
+
+    .orb-2 {
+      width: 250px;
+      height: 250px;
+      background: var(--secondary);
+      bottom: -60px;
+      right: -60px;
+      animation-delay: 5s;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(30px, -30px); }
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      padding: 1rem 3vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(10px);
+      background: rgba(10, 14, 39, 0.6);
+      border-bottom: 1px solid rgba(0, 255, 136, 0.1);
+      flex-shrink: 0;
+    }
+
+    .logo {
+      font-family: "Orbitron", sans-serif;
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .back-btn {
+      padding: 0.5rem 1.5rem;
+      background: transparent;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      font-weight: 600;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-size: clamp(0.7rem, 1.5vw, 0.85rem);
+      text-transform: uppercase;
+    }
+
+    .back-btn:hover {
+      background: var(--primary);
+      color: var(--darker);
+    }
+
+    /* Main Container */
+    .container {
+      flex: 1;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 3vw;
+      width: 100%;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 500px;
+      background: rgba(15, 20, 40, 0.85);
+      padding: clamp(20px, 4vh, 32px) clamp(20px, 4vw, 28px);
+      border-radius: 20px;
+      border: 1px solid rgba(0, 255, 136, 0.2);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(20px);
+    }
+
+    .card-header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .card-title {
+      font-family: "Orbitron", sans-serif;
+      font-size: clamp(1.4rem, 4vw, 1.8rem);
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-subtitle {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: clamp(0.8rem, 1.8vw, 0.9rem);
+    }
+
+    .email-link {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Compact Form Layout */
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group.full-width {
+      grid-column: 1 / -1;
+    }
+
+    .form-group label {
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 500;
+      font-size: clamp(0.75rem, 1.5vw, 0.85rem);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.4rem;
+    }
+
+    .form-input,
+    .form-textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      background: rgba(0, 0, 0, 0.3);
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      color: #fff;
+      font-size: 16px;
+      font-family: inherit;
+      transition: all 0.3s;
+      outline: none;
+    }
+
+    .form-input:focus,
+    .form-textarea:focus {
+      border-color: var(--primary);
+      background: rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 15px rgba(0, 255, 136, 0.2);
+    }
+
+    .form-textarea {
+      resize: none;
+      height: 100px;
+      min-height: 100px;
+    }
+
+    .form-input::placeholder,
+    .form-textarea::placeholder {
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 0.875rem;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border: none;
+      border-radius: 50px;
+      color: var(--darker);
+      font-weight: 700;
+      font-size: clamp(0.85rem, 2vw, 0.95rem);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 8px 25px rgba(0, 255, 136, 0.3);
+    }
+
+    .submit-btn:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 35px rgba(0, 255, 136, 0.5);
+    }
+
+    .submit-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    /* Footer */
+    footer {
+      position: relative;
+      z-index: 10;
+      padding: 1rem 2vw;
+      text-align: center;
+      background: rgba(10, 14, 39, 0.6);
+      border-top: 1px solid rgba(0, 255, 136, 0.1);
+      backdrop-filter: blur(10px);
+      color: rgba(255, 255, 255, 0.6);
+      font-size: clamp(0.7rem, 1.5vw, 0.8rem);
+      flex-shrink: 0;
+    }
+
+    /* Popup */
+    .popup-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+    }
+
+    .popup-content {
+      background: rgba(15, 20, 40, 0.95);
+      padding: 2rem;
+      border-radius: 16px;
+      border: 2px solid var(--primary);
+      box-shadow: 0 0 60px rgba(0, 255, 136, 0.4);
+      text-align: center;
+      max-width: 80vw;
+      animation: popupSlide 0.4s ease-out;
+    }
+
+    @keyframes popupSlide {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .popup-title {
+      font-size: clamp(1.1rem, 3vw, 1.3rem);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .popup-message {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: clamp(0.85rem, 2vw, 0.95rem);
+    }
+
+    /* Mobile optimization */
+    @media (max-width: 600px) {
+      html {
+        height: -webkit-fill-available;
+      }
+
+      body {
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+      }
+
+      header {
+        padding: 0.875rem 4vw;
+      }
+
+      .container {
+        align-items: flex-start;
+        padding: 1.5rem 4vw 2rem 4vw;
+      }
+
+      .card {
+        max-width: 100%;
+        padding: 1.25rem 1rem;
+      }
+
+      .card-header {
+        margin-bottom: 1.25rem;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0.875rem;
+        margin-bottom: 0.875rem;
+      }
+
+      .form-group label {
+        margin-bottom: 0.35rem;
+      }
+
+      .form-input,
+      .form-textarea {
+        font-size: 16px;
+        padding: 0.625rem 0.875rem;
+      }
+
+      .form-textarea {
+        height: 90px;
+        min-height: 90px;
+      }
+
+      .submit-btn {
+        padding: 0.75rem;
+      }
+
+      footer {
+        padding: 0.875rem 4vw;
+      }
+    }
+
+    /* Very small height adjustment */
+    @media (max-height: 600px) {
+      .card-header {
+        margin-bottom: 1rem;
+      }
+      
+      .form-grid {
+        gap: 0.75rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .form-textarea {
+        height: 70px;
+        min-height: 70px;
+      }
+    }
+
+    /* Prevent iOS zoom on input focus */
+    @media screen and (max-width: 600px) {
+      select,
+      textarea,
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="datetime"],
+      input[type="datetime-local"],
+      input[type="date"],
+      input[type="month"],
+      input[type="time"],
+      input[type="week"],
+      input[type="number"],
+      input[type="tel"],
+      input[type="url"] {
+        font-size: 16px !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Background -->
+  <div class="bg-animation">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Amosix</div>
+    <a href="javascript:history.back()"><button class="back-btn">Back</button></a>
+  </header>
+
+  <!-- Main Container -->
+  <main class="container">
+    <div class="card">
+      <div class="card-header">
+        <h1 class="card-title">Get in Touch</h1>
+        <p class="card-subtitle">
+          <a href="mailto:eztolix@gmail.com" class="email-link">eztolix@gmail.com</a>
+        </p>
+      </div>
+      
+      <form id="contactForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input 
+              class="form-input" 
+              type="text" 
+              id="name" 
+              name="name" 
+              placeholder="Your name" 
+              required 
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input 
+              class="form-input" 
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder="your@email.com" 
+              required 
+            />
+          </div>
+
+          <div class="form-group full-width">
+            <label for="subject">Subject</label>
+            <input 
+              class="form-input" 
+              type="text" 
+              id="subject" 
+              name="subject" 
+              placeholder="What's this about? (optional)" 
+            />
+          </div>
+
+          <div class="form-group full-width">
+            <label for="message">Message</label>
+            <textarea 
+              class="form-textarea" 
+              id="message" 
+              name="message" 
+              placeholder="Write your message here..." 
+              required
+            ></textarea>
+          </div>
+        </div>
+
+        <button class="submit-btn" type="submit">
+          Send Message
+        </button>
+        <input 
+  type="text" 
+  id="hp_field" 
+  name="hp_field" 
+  style="display:none !important; visibility:hidden !important;" 
+  autocomplete="off"
+  tabindex="-1"
+/>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Amosix. All rights reserved.
+  </footer>
+
+  <!-- Popup -->
+  <div class="popup-overlay" id="popup">
+    <div class="popup-content">
+      <div class="popup-title" id="popupTitle">Sending...</div>
+      <div class="popup-message" id="popupMessage">Please wait a moment</div>
+    </div>
+  </div>
+
+  <script>
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzeU0sAW12Gn0ELd6FIkF_eWjwgx3fD8oCM-klAMPY5izFQqfYgVrbdqX-2RTVsCfsh/exec";
+
+    const form = document.getElementById("contactForm");
+    const popup = document.getElementById("popup");
+    const popupTitle = document.getElementById("popupTitle");
+    const popupMessage = document.getElementById("popupMessage");
+    const submitBtn = document.querySelector(".submit-btn");
+
+    function showPopup(title, message) {
+  popupTitle.textContent = title;
+  popupMessage.textContent = message;
+  popup.style.display = "flex";
+}
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      
+      // Honeypot spam check
+if (document.getElementById("hp_field").value.trim() !== "") {
+  showPopup("Spam Detected", "Your request looks automated. Blocked.", 3000);
+  submitBtn.disabled = false;
+  submitBtn.textContent = "Send Message";
+  return; // Stop here
+}
+      
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending...";
+      showPopup("Sending...", "Please wait a moment", 10000);
+
+      try {
+        const formData = new FormData(form);
+        const response = await fetch(SCRIPT_URL, {
+          method: "POST",
+          body: formData,
+        });
+
+        let result;
+        try {
+          result = await response.json();
+        } catch (err) {
+          result = { status: "success" };
+        }
+
+        if (result.status === "success") {
+  showPopup("Success!", "Your message has been sent successfully");
+  form.reset(); // reset form
+
+        } else {
+          throw new Error("Failed");
+        }
+      } catch (err) {
+        console.error(err);
+        showPopup("Error", "Failed to send message. Please try again.", 3000);
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Send Message";
+      }
+    });
+    // Close popup when clicking outside the popup-content
+popup.addEventListener("click", (e) => {
+  if (e.target === popup) {
+    popup.style.display = "none";
+  }
+});
+
+// Close popup when clicking the Back button
+document.querySelector(".back-btn").addEventListener("click", () => {
+  popup.style.display = "none";
+});
+  </script>
+</body>
+</html>

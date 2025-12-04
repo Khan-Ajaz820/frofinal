@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Amosix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            line-height: 1.6;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid rgba(0, 212, 255, 0.3);
+        }
+
+        h1 {
+            font-family: 'Righteous', cursive;
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        h1 .highlight {
+            color: #00d4ff;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-family: 'Righteous', cursive;
+            font-size: 1.5rem;
+            color: #00d4ff;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: #fff;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            opacity: 0.9;
+        }
+
+        a {
+            color: #00d4ff;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        a:hover {
+            opacity: 0.7;
+            text-decoration: underline;
+        }
+
+        strong {
+            color: #fff;
+        }
+
+        .highlight-box {
+            background: rgba(0, 212, 255, 0.1);
+            border-left: 3px solid #00d4ff;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        .story-box {
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.1), rgba(0, 212, 255, 0.1));
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .value-card {
+            background: rgba(0, 212, 255, 0.05);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .value-card h3 {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+            border-top: 2px solid rgba(0, 212, 255, 0.3);
+            opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 15px 20px !important;
+            }
+            
+            nav div {
+                font-size: 1.3rem !important;
+            }
+            
+            nav a {
+                padding: 10px 20px !important;
+                font-size: 0.9rem !important;
+            }
+            
+            .container {
+                padding: 30px 15px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Simple Navbar -->
+    <nav style="position: sticky; top: 0; z-index: 1000; background: rgba(15, 12, 41, 0.95); padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid rgba(0, 212, 255, 0.3);">
+        <div style="font-family: 'Righteous', cursive; font-size: 1.8rem; background: linear-gradient(135deg, #8a2be2, #00d4ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">✨ Amosix</div>
+        <a href="javascript:history.back()" style="padding: 12px 30px; background: linear-gradient(135deg, #8a2be2, #00d4ff); border: 2px solid #00d4ff; border-radius: 30px; color: #fff; font-weight: 700; text-decoration: none; transition: all 0.3s;">← Back</a>
+    </nav>
+    
+    <div class="container">
+        <header>
+            <h1>About <span class="highlight">US</span></h1>
+            <p class="subtitle">Transforming your images into beautiful emoji art</p>
+        </header>
+
+        <!-- Our Story -->
+        <section>
+            <h2>Our Story</h2>
+            <div class="story-box">
+                <p>It all started with a simple moment of inspiration. While scrolling through social media, I came across a stunning mosaic design that caught my eye. The way countless small pieces came together to form something beautiful and unexpected sparked an idea: <strong>What if anyone could create their own artistic mosaics, easily and for free?</strong></p>
+            </div>
+            <p>That's how Amosix was born in December 2024. As a solo developer passionate about creative tools, I wanted to build something that would democratize digital art creation and make it accessible to everyone, regardless of their artistic skill level.</p>
+            <p>The name "Amosix" combines "Em + mosix" tone with a creative twist, reflecting our mission: making beautiful artwork creation effortless and enjoyable.</p>
+        </section>
+
+        <!-- Mission -->
+        <section>
+            <h2>Our Mission</h2>
+            <div class="highlight-box">
+                <p><strong>To empower everyone to create beautiful artwork for free, without barriers or complexity.</strong></p>
+            </div>
+            <p>We believe that art should be accessible to all. Whether you're a professional designer, a social media enthusiast, or someone who just wants to have fun with their photos, Amosix is here to help you express your creativity.</p>
+        </section>
+
+        <!-- What Makes Us Different -->
+        <section>
+            <h2>What Makes Us Different</h2>
+            <ul>
+                <li><strong>🎨 Completely Free:</strong> No hidden costs, no premium tiers, no subscriptions. Art creation should be free for everyone.</li>
+                <li><strong>🔒 Privacy First:</strong> Your images never leave your device. Everything processes locally in your browser.</li>
+                <li><strong>⚡ Instant Results:</strong> No waiting, no uploads. See your emoji mosaic come to life in real-time.</li>
+                <li><strong>🌐 No Registration:</strong> Jump right in and start creating. No account needed, no email required.</li>
+                <li><strong>📱 Works Everywhere:</strong> Use Amosix on any device with a modern browser.</li>
+            </ul>
+        </section>
+
+        <!-- Our Values -->
+        <section>
+            <h2>Our Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>🎯 Simplicity</h3>
+                    <p>Powerful tools should be easy to use.</p>
+                </div>
+                <div class="value-card">
+                    <h3>🔐 Privacy</h3>
+                    <p>Your data stays yours, always.</p>
+                </div>
+                <div class="value-card">
+                    <h3>💝 Accessibility</h3>
+                    <p>Free and open to everyone.</p>
+                </div>
+                <div class="value-card">
+                    <h3>✨ Creativity</h3>
+                    <p>Unleashing artistic expression.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Creator -->
+        <section>
+            <h2>Meet the Creator</h2>
+            <p><strong>Khan Ajaz</strong> - Solo Developer & Creator</p>
+            <p>Hi! I'm Khan Ajaz, the person behind Amosix. As a passionate developer and creative enthusiast, I love building tools that make people's lives more colorful and fun. Amosix is my way of sharing the joy of digital art creation with the world.</p>
+            <p>When I'm not coding, you can find me exploring new technologies, discovering inspiring designs, and thinking about the next creative tool to build.</p>
+        </section>
+
+        <!-- How It Works -->
+        <section>
+            <h2>How It Works</h2>
+            <p>Amosix uses advanced browser-based image processing to analyze your photos and recreate them using carefully selected emojis. The entire process happens on your device using:</p>
+            <ul>
+                <li>Smart color matching algorithms</li>
+                <li>Pixel-by-pixel emoji selection</li>
+                <li>Real-time canvas rendering</li>
+                <li>Client-side image processing</li>
+            </ul>
+            <p>All of this technology works together to transform your ordinary photos into extraordinary emoji masterpieces.</p>
+        </section>
+
+        <!-- Looking Forward -->
+        <section>
+            <h2>Looking Forward</h2>
+            <p>Amosix is just getting started! Here's what we're excited about:</p>
+            <ul>
+                <li>🎨 More customization options</li>
+                <li>🖼️ Additional artistic styles</li>
+                <li>⚡ Performance improvements</li>
+                <li>🌟 New creative features based on your feedback</li>
+            </ul>
+            <p>We're constantly improving and adding new features to make your creative experience even better.</p>
+        </section>
+
+        <!-- Get in Touch -->
+        <section>
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you! Whether you have questions, feedback, or just want to share your amazing creations, feel free to <a href="contact.html">contact us.</a></p>
+            <p>Your feedback helps us make Amosix better for everyone.</p>
+            <div class="highlight-box">
+                <p><strong>Thank you for being part of the Amosix community!</strong> 🎉</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Amosix - Created with ❤️ by Khan Ajaz</p>
+        </footer>
+    </div>
+</body>
+</html>
