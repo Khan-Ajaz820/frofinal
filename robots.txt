@@ -1,0 +1,19 @@
+# Amosix.in - Emoji Mosaic Generator
+# Robots.txt File
+
+# Allow all search engines to crawl everything
+User-agent: *
+Allow: /
+
+# Optional: Block specific files if needed (uncomment if you want to use)
+# Disallow: /admin/
+# Disallow: /test/
+# Disallow: /*.js$
+# Disallow: /*.css$
+
+# Sitemap locations
+Sitemap: https://amosix.in/sitemap.xml
+Sitemap: https://blog.amosix.in/sitemap.xml
+
+# Crawl-delay (optional - uncomment if you experience server load issues)
+# Crawl-delay: 1
