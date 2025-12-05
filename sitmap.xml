@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage - Emoji Mosaic Generator -->
+  <url>
+    <loc>https://amosix.in/</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://pub-158fe245ad374907b7bb850980fbef49.r2.dev/banner.webp</image:loc>
+      <image:title>Emoji Mosaic Generator</image:title>
+    </image:image>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://amosix.in/about.html</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://amosix.in/contact.html</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://amosix.in/privacy-policy.html</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Terms of Service -->
+  <url>
+    <loc>https://amosix.in/terms.html</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- License Page -->
+  <url>
+    <loc>https://amosix.in/license.html</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- Blog (Main Blog Homepage) -->
+  <url>
+    <loc>https://blog.amosix.in/</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Gallery Section (Deep Link) -->
+  <url>
+    <loc>https://amosix.in/#gallery-sec</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Features Section (Deep Link) -->
+  <url>
+    <loc>https://amosix.in/#features-sec</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- How It Works Section (Deep Link) -->
+  <url>
+    <loc>https://amosix.in/#how-it</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- About Tool Section (Deep Link) -->
+  <url>
+    <loc>https://amosix.in/#abt-tool</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- FAQ Section (Deep Link) -->
+  <url>
+    <loc>https://amosix.in/#faq-sec</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
